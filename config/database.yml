@@ -1,9 +1,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: skeleton_app
-  host: localhost
-  port: 3000
+  pool: 5
 
 development:
   <<: *default
