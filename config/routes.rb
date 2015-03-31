@@ -56,4 +56,7 @@ Rails.application.routes.draw do
   #   end
   #
   root to: "home#index"
+  resources :products do
+    collection { post :import }
+  end
 end
